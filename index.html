@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Recorridos en la Candelaria</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 /*
 ══════════════════════════════════════════════════
@@ -51,8 +51,9 @@ html,body {
 }
 .header h1 {
   font-family:'Playfair Display',serif;
-  font-size:1.4rem; font-weight:700;
+  font-size:1.55rem; font-weight:700;
   color:var(--mauve-dk); white-space:nowrap; line-height:1;
+  letter-spacing:-0.01em;
 }
 .header h1 em { color:var(--brown-md); font-style:italic }
 .htags { display:flex; gap:.22rem; flex-wrap:wrap; justify-content:flex-end; max-width:580px }
@@ -60,7 +61,7 @@ html,body {
   background:var(--mauve-lt);
   border:1px solid rgba(140,61,86,.2);
   border-radius:20px; padding:2px 8px;
-  font-size:9px; color:var(--brown); white-space:nowrap;
+  font-size:9.5px; color:var(--brown); white-space:nowrap;
 }
 .tag b { color:var(--mauve-dk); margin-right:2px; font-weight:700 }
 
@@ -74,8 +75,8 @@ html,body {
 }
 .slabel {
   font-family:'Playfair Display',serif;
-  font-size:.65rem; color:var(--mauve-dk);
-  letter-spacing:.09em; text-transform:uppercase; flex-shrink:0;
+  font-size:.72rem; font-weight:700; color:var(--mauve-dk);
+  letter-spacing:.1em; text-transform:uppercase; flex-shrink:0;
 }
 .pgrid {
   display:grid;
@@ -131,9 +132,10 @@ html,body {
 }
 .qr-name {
   font-family:'Playfair Display',serif;
-  font-size:clamp(9px,1vw,12px); font-weight:700;
+  font-size:clamp(11px,1.2vw,15px); font-weight:700;
   color:var(--brown); text-align:center;
   line-height:1.3; padding:0 6px;
+  letter-spacing:.01em;
 }
 
 /* FRONT — la imagen del marco ES la puerta
@@ -163,12 +165,13 @@ html,body {
 }
 .front-name {
   font-family:'Playfair Display',serif;
-  font-size:clamp(8px,.9vw,11px); font-weight:700;
+  font-size:clamp(9px,1vw,13px); font-weight:700;
   color:var(--cream); line-height:1.2; display:block;
+  letter-spacing:.01em;
 }
 .front-hint {
-  font-size:clamp(6px,.7vw,9px); color:var(--gold-lt);
-  letter-spacing:.05em; display:block; margin-top:2px; opacity:.9;
+  font-size:clamp(7px,.75vw,10px); color:var(--gold-lt);
+  letter-spacing:.06em; display:block; margin-top:2px; opacity:.9;
 }
 
 /* EL GIRO — la puerta se abre desde el borde izquierdo */
@@ -186,8 +189,8 @@ html,body {
 }
 .map-label {
   font-family:'Playfair Display',serif;
-  font-size:.65rem; color:var(--mauve-dk);
-  letter-spacing:.09em; text-transform:uppercase;
+  font-size:.72rem; font-weight:700; color:var(--mauve-dk);
+  letter-spacing:.1em; text-transform:uppercase;
   margin-bottom:.45rem; flex-shrink:0;
 }
 .map-container {
@@ -229,7 +232,7 @@ html,body {
 }
 .pb-title {
   font-family:'Playfair Display',serif;
-  font-size:8.5px; font-weight:700;
+  font-size:9.5px; font-weight:700;
   color:var(--brown); text-align:center;
   line-height:1.2; margin-bottom:1px; flex-shrink:0;
 }
@@ -237,7 +240,7 @@ html,body {
 .fq-btn {
   width:100%; padding:3px 5px; border-radius:4px;
   border:1.5px solid var(--mauve-lt);
-  font-size:8px; font-weight:500; cursor:pointer;
+  font-size:8.5px; font-weight:500; cursor:pointer;
   text-align:left; transition:all .15s;
   background:white; color:var(--brown);
   font-family:'Karla',sans-serif;
@@ -274,12 +277,13 @@ html,body {
 }
 .place-name {
   font-family:'Playfair Display',serif;
-  font-size:10px; font-weight:700;
+  font-size:11px; font-weight:700;
   color:var(--cream); text-align:center; line-height:1.25;
+  letter-spacing:.01em;
 }
-.place-addr { font-size:7.5px; color:rgba(250,243,234,.65); text-align:center; line-height:1.2 }
+.place-addr { font-size:8px; color:rgba(250,243,234,.65); text-align:center; line-height:1.2 }
 .place-sel {
-  font-size:7.5px; color:var(--gold-lt);
+  font-size:8px; color:var(--gold-lt);
   text-align:center; margin-top:auto; letter-spacing:.04em; opacity:.95;
 }
 </style>
@@ -314,13 +318,13 @@ html,body {
         <div class="door-back">
           <div class="qr-overlay">
             <div class="qr-box">
-              <img src="imagenes/qr-derly.png" alt="QR Derly">
+              <img src="imagenesPagina/imagenes_vector/QR_Derly.jpeg" alt="QR Derly">
             </div>
             <div class="qr-name">Derly Rodriguez</div>
           </div>
         </div>
         <div class="door-front">
-          <img class="frame-img" src="imagenes/marco-derly.svg" alt="Derly Rodriguez">
+          <img class="frame-img" src="imagenesPagina/imagenes_vector/DERLY-03.svg" alt="Derly Rodriguez">
           <div class="front-label">
             <span class="front-name">Derly Rodriguez</span>
             <span class="front-hint">→ ver QR</span>
@@ -333,13 +337,13 @@ html,body {
         <div class="door-back">
           <div class="qr-overlay">
             <div class="qr-box">
-              <img src="imagenes/qr-frander.png" alt="QR Frander">
+              <img src="imagenesPagina/imagenes_vector/QR_Frander.jpeg" alt="QR Frander">
             </div>
             <div class="qr-name">Frander Bentacur</div>
           </div>
         </div>
         <div class="door-front">
-          <img class="frame-img" src="imagenes/marco-frander.svg" alt="Frander Bentacur">
+          <img class="frame-img" src="imagenesPagina/imagenes_vector/FRANDER-06.svg" alt="Frander Bentacur">
           <div class="front-label">
             <span class="front-name">Frander Bentacur</span>
             <span class="front-hint">→ ver QR</span>
@@ -358,7 +362,7 @@ html,body {
           </div>
         </div>
         <div class="door-front">
-          <img class="frame-img" src="imagenes/marco-katia.svg" alt="Katia">
+          <img class="frame-img" src="imagenesPagina/imagenes_vector/KATIA-07.svg" alt="Katia">
           <div class="front-label">
             <span class="front-name">Katia</span>
             <span class="front-hint">→ ver QR</span>
@@ -377,7 +381,7 @@ html,body {
           </div>
         </div>
         <div class="door-front">
-          <img class="frame-img" src="imagenes/marco-jonh.svg" alt="Jonh Rodriguez">
+          <img class="frame-img" src="imagenesPagina/imagenes_vector/JHON-08.svg" alt="Jonh Rodriguez">
           <div class="front-label">
             <span class="front-name">Jonh Rodriguez</span>
             <span class="front-hint">→ ver QR</span>
@@ -390,13 +394,13 @@ html,body {
         <div class="door-back">
           <div class="qr-overlay">
             <div class="qr-box">
-              <img src="imagenes/qr-sandra.png" alt="QR Sandra">
+              <img src="imagenesPagina/imagenes_vector/QR_Sandra.jpeg" alt="QR Sandra">
             </div>
             <div class="qr-name">Sandra Almonacid</div>
           </div>
         </div>
         <div class="door-front">
-          <img class="frame-img" src="imagenes/marco-sandra.svg" alt="Sandra Almonacid">
+          <img class="frame-img" src="imagenesPagina/imagenes_vector/SANDRA-09.svg" alt="Sandra Almonacid">
           <div class="front-label">
             <span class="front-name">Sandra Almonacid</span>
             <span class="front-hint">→ ver QR</span>
@@ -409,7 +413,7 @@ html,body {
         <div class="door-back">
           <div class="qr-overlay">
             <div class="qr-box">
-              <img src="imagenes/qr-inez.png" alt="QR Inez y Martha">
+              <img src="imagenesPagina/imagenes_vector/QR_InezMarta.jpeg" alt="QR Inez y Martha">
             </div>
             <div class="qr-name">Inez Castro y Martha</div>
           </div>
